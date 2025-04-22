@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page 5 - Pick a Palette</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .palette {
+      display: flex;
+      height: 90vh;
+    }
+    .half {
+      flex: 1;
+    }
+    .tan-white { background: linear-gradient(to right, tan 50%, white 50%); }
+    .black { background: black; }
+    .tan-black { background: linear-gradient(to right, tan 50%, black 50%); }
+    .center-box {
+      height: 10vh;
+      text-align: center;
+      padding-top: 10px;
+      background-color: #eee;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: none;
+      background-color: #222;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="palette" class="palette tan-white"></div>
+  <div class="center-box">
+    <button onclick="document.getElementById('palette').className='palette tan-white'">Tan + White</button>
+    <button onclick="document.getElementById('palette').className='palette tan-black'">Tan + Black</button>
+    <button onclick="document.getElementById('palette').className='palette black'">Black</button>
+    <button onclick="location.href='page6.html'">Continue</button>
+  </div>
+</body>
+</html>

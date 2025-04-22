@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page 1 - The Beginning</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      background-color: #fefefe;
+      padding: 20px;
+    }
+    .dialogue-box {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background: #222;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #444;
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/03/audio_603fd5dba4.mp3?filename=cancion-cine-underwater-247535.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div class="dialogue-box">
+    <p>Hey, so like this is my first time doing this so bear with me… I kinda don’t know what I’m doing.</p>
+    <button onclick="location.href='page2.html'">Continue...</button>
+  </div>
+</body>
+</html>
