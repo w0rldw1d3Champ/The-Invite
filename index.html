@@ -48,5 +48,17 @@
     <p>Hey, so like this is my first time doing this so bear with me… I kinda don’t know what I’m doing.</p>
     <button onclick="location.href='page2.html'">Continue...</button>
   </div>
+  <audio id="bgMusic" autoplay loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/29/audio_6e3e7cb8c1.mp3?filename=cancion-cine-underwater-247535.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<script>
+  document.addEventListener('click', () => {
+    const bgMusic = document.getElementById('bgMusic');
+    if (bgMusic && bgMusic.paused) {
+      bgMusic.play().catch(e => console.log("Browser blocked autoplay:", e));
+    }
+  }, { once: true });
+</script>
 </body>
 </html>
